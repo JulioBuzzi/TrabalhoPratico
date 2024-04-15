@@ -1,0 +1,158 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333; /* Texto preto */
+  }
+  /*Cabeçalho inicio*/
+  header {
+    background-color: #333;
+    color: #fff; 
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+  }
+  
+  h1 {
+    margin: 0;
+  }
+  h1.name{
+    margin-left:20px;
+  }
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Cabeçalho final */
+
+
+  main {
+    padding: 20px;
+  }
+  
+  .quebraLinha{
+    color:black;
+    
+  }
+
+  #Seção1 {
+    display:flex;
+  }
+  section {
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  
+  img{
+    width:100%;
+    width:200px;
+    height:100%;
+    height:200px;
+  }
+
+  h3{
+    margin-left:20px;
+  }
+  p.sobre-mim{
+    margin-left:20px;
+}
+
+  p.location{
+    margin-left:20px;
+  }
+
+  p.site{
+    margin-left:20px;
+  }
+  section.icons{
+    margin-left:20px;
+    display:flex;
+    align-items: baseline;
+
+  }
+  i{
+    margin-left:20px;
+    font-size:xx-large;
+    
+  }
+
+ button{
+  border:none;
+  background-color:white;
+ }
+
+
+ .carrossel {
+  width: 500px; /* Largura do carrossel */
+  height: 300px; /* Altura do carrossel */
+  overflow: hidden; /* Ocultar o overflow de conteúdo */
+  position: relative; /* Posicionamento relativo para elementos filhos */
+}
+
+.carrossel ul {
+  list-style: none; /* Remover marcadores da lista */
+  padding: 0; /* Remover espaçamento interno */
+  margin: 0; /* Remover espaçamento externo */
+  width: 200%; /* Tamanho total das imagens (100% * 2) */
+  left: 0; /* Posicionar a lista no início */
+  transition: left 0.5s ease; /* Animação de transição */
+}
+
+.carrossel li {
+  float: left; /* Posicionar as imagens lado a lado */
+  width: 50%; /* Largura de cada imagem (50% do carrossel) */
+  text-align: center; /* Centralizar o texto dentro da imagem */
+}
+
+.carrossel img {
+  width: 100%; /* Ocupar toda a largura do item */
+  height: auto; /* Manter proporção da imagem */
+}
+
+/* Animação de transição para a esquerda */
+.carrossel ul:hover {
+  left: -50%; /* Mover a lista para a esquerda (50%) */
+}
+
+/* Botões de navegação (opcional) */
+.seta-esquerda, .seta-direita {
+  position: absolute; /* Posicionamento absoluto dentro do carrossel */
+  top: 50%; /* Posicionar no centro vertical */
+  transform: translateY(-50%); /* Ajustar o posicionamento vertical */
+  cursor: pointer; /* Indicar interação com o cursor */
+}
+
+.seta-esquerda {
+  left: 10px; /* Posição à esquerda do carrossel */
+}
+
+.seta-direita {
+  right: 10px; /* Posição à direita do carrossel */
+}
+
+
+
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+  }
