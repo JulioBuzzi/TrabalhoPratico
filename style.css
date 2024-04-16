@@ -101,51 +101,51 @@ body {
 
 
  .carrossel {
-  width: 500px; /* Largura do carrossel */
-  height: 300px; /* Altura do carrossel */
-  overflow: hidden; /* Ocultar o overflow de conteúdo */
-  position: relative; /* Posicionamento relativo para elementos filhos */
+  width: 500px; 
+  height: 300px; 
+  overflow: hidden; 
+  position: relative; 
 }
 
 .carrossel ul {
-  list-style: none; /* Remover marcadores da lista */
-  padding: 0; /* Remover espaçamento interno */
-  margin: 0; /* Remover espaçamento externo */
-  width: 200%; /* Tamanho total das imagens (100% * 2) */
-  left: 0; /* Posicionar a lista no início */
-  transition: left 0.5s ease; /* Animação de transição */
+  list-style: none; 
+  padding: 0; 
+  margin: 0; 
+  width: 200%; 
+  left: 0; 
+  transition: left 0.5s ease; 
 }
 
 .carrossel li {
-  float: left; /* Posicionar as imagens lado a lado */
-  width: 50%; /* Largura de cada imagem (50% do carrossel) */
-  text-align: center; /* Centralizar o texto dentro da imagem */
+  float: left; 
+  width: 50%; 
+  text-align: center; 
 }
 
 .carrossel img {
-  width: 100%; /* Ocupar toda a largura do item */
-  height: auto; /* Manter proporção da imagem */
+  width: 100%; 
+  height: auto; 
 }
 
-/* Animação de transição para a esquerda */
+
 .carrossel ul:hover {
-  left: -50%; /* Mover a lista para a esquerda (50%) */
+  left: -50%; 
 }
 
-/* Botões de navegação (opcional) */
+
 .seta-esquerda, .seta-direita {
-  position: absolute; /* Posicionamento absoluto dentro do carrossel */
-  top: 50%; /* Posicionar no centro vertical */
-  transform: translateY(-50%); /* Ajustar o posicionamento vertical */
-  cursor: pointer; /* Indicar interação com o cursor */
+  position: absolute; 
+  top: 50%; 
+  transform: translateY(-50%); 
+  cursor: pointer; 
 }
 
 .seta-esquerda {
-  left: 10px; /* Posição à esquerda do carrossel */
+  left: 10px; 
 }
 
 .seta-direita {
-  right: 10px; /* Posição à direita do carrossel */
+  right: 10px; 
 }
 
 
