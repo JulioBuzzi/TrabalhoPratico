@@ -1,0 +1,50 @@
+{
+    "albums": [
+      {
+        "id": 1,
+        "title": "Meu Primeiro Álbum",
+        "description": "Descrição do primeiro álbum.",
+        "coverUrl": "url_da_imagem_de_capa",
+        "contentUrl": "url_do_conteúdo"
+      }
+      // Adicione mais álbuns aqui
+    ],
+    "photos": [
+      {
+        "id": 1,
+        "albumId": 1,
+        "title": "Minha Primeira Foto",
+        "url": "JulioBuzzi.png"
+      }
+      // Adicione mais fotos aqui
+    ],
+    "highlights": [
+      {
+        "id": 1,
+        "title": "Destaque 1",
+        "description": "Descrição do destaque 1.",
+        "coverUrl": "url_da_imagem_de_capa",
+        "contentUrl": "url_do_conteúdo"
+      }
+      // Adicione mais destaques aqui
+    ],
+    "colleagues": [
+      {
+        "id": 1,
+        "photoUrl": "url_da_foto_do_colega",
+        "name": "Nome do Colega",
+        "githubUrl": "url_do_perfil_no_github"
+      }
+      // Adicione mais colegas aqui
+    ],
+    "repositories": [
+      {
+        "id": 1,
+        "name": "Repositório 1",
+        "description": "Descrição do repositório 1.",
+        "url": "url_do_repositório"
+      }
+      // Adicione mais repositórios aqui
+    ]
+  }
+  
