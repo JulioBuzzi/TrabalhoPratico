@@ -169,3 +169,28 @@ body {
       z-index: 1000;
     }
   }
+
+  /* No seu arquivo style.css */
+
+.colegas {
+  padding: 20px;
+}
+
+.colegas-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Espaço entre os cards */
+}
+
+.colegas .card {
+  flex: 0 1 calc(20% - 20px); /* Ajuste a largura dos cards conforme necessário */
+  max-width: calc(20% - 20px); /* Ajuste a largura máxima dos cards conforme necessário */
+}
+
+@media screen and (max-width: 768px) {
+  .colegas .card {
+      flex: 0 1 calc(50% - 20px); /* Mudança para duas colunas em telas menores */
+      max-width: calc(50% - 20px); /* Largura máxima ajustada para duas colunas */
+  }
+}
+

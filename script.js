@@ -9,11 +9,11 @@ function fetchGitHubRepos() {
     fetch(`https://api.github.com/users/${username}/repos`)
         .then(response => response.json())
         .then(repos => {
-            const reposContainer = document.getElementById('repos-container');
-            repos.forEach(repo => {
+            repos.forEach((repo, index) => {
+                const repoLink = `repo${index + 1}.html`;
                 const repoCard = `
                     <div class="card">
-                        <a href="${repo.html_url}" target="_blank">
+                        <a href="${repoLink}" class="repo-link">
                             <img src="assets/images/github.png" class="card-img-top" alt="Imagem da logo github">
                         </a>
                         <div class="card-body">
@@ -21,18 +21,48 @@ function fetchGitHubRepos() {
                             <p class="card-text">${repo.description || 'Sem descrição'}</p>
                         </div>
                         <div class="card-footer">
-                            <small class="text-muted">Last updated ${new Date(repo.updated_at).toLocaleDateString()}</small>
+                            <small class="text-muted">Última atualização ${new Date(repo.updated_at).toLocaleDateString()}</small>
                         </div>
                     </div>
                 `;
+                const reposContainer = document.getElementById('repos-container');
                 reposContainer.innerHTML += repoCard;
+
+                // Salva informações na sessionStorage para as páginas individuais
+                sessionStorage.setItem(`repo${index + 1}`, JSON.stringify(repo));
             });
         })
         .catch(error => console.error('Erro ao buscar repositórios do GitHub:', error));
 }
 
+
+function fetchColegasData() {
+    fetch('db/db.json')
+        .then(response => response.json())
+        .then(data => {
+            const colegasContainer = document.querySelector('.colegas-container');
+            colegasContainer.innerHTML = ''; // Limpa o conteúdo atual
+
+            data.colegas.forEach(colega => {
+                const cardHTML = `
+                    <div class="card">
+                        <img src="${colega.foto}" class="card-img-top" alt="${colega.alt}">
+                        <div class="card-body">
+                            <h5 class="card-title">${colega.nome}</h5>
+                            <a href="${colega.github}" class="btn btn-primary" target="_blank">Ver GitHub</a>
+                        </div>
+                    </div>
+                `;
+                colegasContainer.innerHTML += cardHTML;
+            });
+        })
+        .catch(error => console.error('Erro ao buscar dados dos colegas:', error));
+}
+
+
+
 function fetchCarouselData() {
-    fetch('db.json')
+    fetch('db/db.json') // Caminho ajustado para db/db.json
         .then(response => response.json())
         .then(data => {
             const carouselIndicators = document.getElementById('carousel-indicators');
@@ -53,22 +83,3 @@ function fetchCarouselData() {
         })
         .catch(error => console.error('Erro ao buscar dados do carrossel:', error));
 }
-
-function fetchColegasData() {
-    fetch('db.json')
-        .then(response => response.json())
-        .then(data => {
-            const colegasSection = document.querySelector('.colegas');
-            colegasSection.innerHTML = ''; // Limpa o conteúdo atual
-            
-            data.colegas.forEach(colega => {
-                const img = document.createElement('img');
-                img.src = colega.foto;
-                img.alt = colega.alt;
-                img.classList.add('colega-img'); // Adiciona uma classe para estilização opcional
-                colegasSection.appendChild(img);
-            });
-        })
-        .catch(error => console.error('Erro ao buscar dados dos colegas:', error));
-}
-

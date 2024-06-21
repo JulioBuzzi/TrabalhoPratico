@@ -21,26 +21,43 @@
       "alt": "Slide 5"
     }
   ],
-  "colegas": [
-    {
-      "foto": "assets/images/person1.jpg",
-      "alt": "Pessoa 1"
-    },
-    {
-      "foto": "assets/images/person2.jpg",
-      "alt": "Pessoa 2"
-    },
-    {
-      "foto": "assets/images/person3.jpg",
-      "alt": "Pessoa 3"
-    },
-    {
-      "foto": "assets/images/person4.jpg",
-      "alt": "Pessoa 4"
-    },
-    {
-      "foto": "assets/images/person5.jpg",
-      "alt": "Pessoa 5"
-    }
-  ]
-}
+  
+    "colegas": [
+      {
+        "id": 1,
+        "foto": "assets/images/bruno.png",
+        "alt": "Foto do Bruno",
+        "nome": "Bruno",
+        "github": "https://github.com/BrunoMaximo03"
+      },
+      {
+        "id": 2,
+        "foto": "assets/images/filipi.png",
+        "alt": "Foto do Filipi",
+        "nome": "Filipi",
+        "github": "https://github.com/filipiipereira"
+      },
+      {
+        "id": 3,
+        "foto": "assets/images/vitor.png",
+        "alt": "Foto do Vitor",
+        "nome": "Vitor",
+        "github": "https://github.com/VitorTss"
+      },
+      {
+        "id": 4,
+        "foto": "assets/images/person4.jpg",
+        "alt": "4",
+        "nome": "Pessoa 4",
+        "github": "https://github.com/pessoa4"
+      },
+      {
+        "id": 5,
+        "foto": "assets/images/person5.jpg",
+        "alt": "5",
+        "nome": "Pessoa 5",
+        "github": "https://github.com/pessoa5"
+      }
+    ]
+  }
+  
