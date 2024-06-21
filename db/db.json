@@ -1,50 +1,46 @@
 {
-    "albums": [
-      {
-        "id": 1,
-        "title": "Meu Primeiro Álbum",
-        "description": "Descrição do primeiro álbum.",
-        "coverUrl": "url_da_imagem_de_capa",
-        "contentUrl": "url_do_conteúdo"
-      }
-      // Adicione mais álbuns aqui
-    ],
-    "photos": [
-      {
-        "id": 1,
-        "albumId": 1,
-        "title": "Minha Primeira Foto",
-        "url": "JulioBuzzi.png"
-      }
-      // Adicione mais fotos aqui
-    ],
-    "highlights": [
-      {
-        "id": 1,
-        "title": "Destaque 1",
-        "description": "Descrição do destaque 1.",
-        "coverUrl": "url_da_imagem_de_capa",
-        "contentUrl": "url_do_conteúdo"
-      }
-      // Adicione mais destaques aqui
-    ],
-    "colleagues": [
-      {
-        "id": 1,
-        "photoUrl": "url_da_foto_do_colega",
-        "name": "Nome do Colega",
-        "githubUrl": "url_do_perfil_no_github"
-      }
-      // Adicione mais colegas aqui
-    ],
-    "repositories": [
-      {
-        "id": 1,
-        "name": "Repositório 1",
-        "description": "Descrição do repositório 1.",
-        "url": "url_do_repositório"
-      }
-      // Adicione mais repositórios aqui
-    ]
-  }
-  
+  "carousel": [
+    {
+      "image": "assets/images/lego.jpg",
+      "alt": "Slide 1"
+    },
+    {
+      "image": "assets/images/valorant.jpg",
+      "alt": "Slide 2"
+    },
+    {
+      "image": "assets/images/flamengo.jpg",
+      "alt": "Slide 3"
+    },
+    {
+      "image": "assets/images/voleibol.jpg",
+      "alt": "Slide 4"
+    },
+    {
+      "image": "assets/images/bolsadevalores.jpg",
+      "alt": "Slide 5"
+    }
+  ],
+  "colegas": [
+    {
+      "foto": "assets/images/person1.jpg",
+      "alt": "Pessoa 1"
+    },
+    {
+      "foto": "assets/images/person2.jpg",
+      "alt": "Pessoa 2"
+    },
+    {
+      "foto": "assets/images/person3.jpg",
+      "alt": "Pessoa 3"
+    },
+    {
+      "foto": "assets/images/person4.jpg",
+      "alt": "Pessoa 4"
+    },
+    {
+      "foto": "assets/images/person5.jpg",
+      "alt": "Pessoa 5"
+    }
+  ]
+}
