@@ -1,23 +1,23 @@
 {
   "carousel": [
     {
-      "image": "assets/images/lego.jpg",
+      "image": "assets/images/lego.png",
       "alt": "Slide 1"
     },
     {
-      "image": "assets/images/valorant.jpg",
+      "image": "assets/images/valorant.png",
       "alt": "Slide 2"
     },
     {
-      "image": "assets/images/flamengo.jpg",
+      "image": "assets/images/volei.png",
       "alt": "Slide 3"
     },
     {
-      "image": "assets/images/voleibol.jpg",
+      "image": "assets/images/flamengo.png",
       "alt": "Slide 4"
     },
     {
-      "image": "assets/images/bolsadevalores.jpg",
+      "image": "assets/images/programacao.png",
       "alt": "Slide 5"
     }
   ],
@@ -46,16 +46,16 @@
       },
       {
         "id": 4,
-        "foto": "assets/images/person4.jpg",
-        "alt": "4",
-        "nome": "Pessoa 4",
+        "foto": "assets/images/gabriel.png",
+        "alt": "Foto do Dias",
+        "nome": "Gabriel Dias",
         "github": "https://github.com/pessoa4"
       },
       {
         "id": 5,
-        "foto": "assets/images/person5.jpg",
-        "alt": "5",
-        "nome": "Pessoa 5",
+        "foto": "assets/images/vitao.png",
+        "alt": "Foto do Vitao Stranks",
+        "nome": "Vitor Stranks",
         "github": "https://github.com/pessoa5"
       }
     ]
