@@ -3,10 +3,10 @@ body {
   margin: 0;
   padding: 0;
   background-color: #f4f4f4;
-  color: #333; /* Texto preto */
+  color: #333; 
 }
 
-/* Cabeçalho início */
+
 header {
   background-color: #333;
   color: #fff;
@@ -104,13 +104,13 @@ button {
 }
 
 .carousel-container {
-  max-width: 80%; /* Define uma largura máxima de 80% da tela */
-  margin: 0 auto; /* Centraliza o carrossel horizontalmente */
+  max-width: 80%; 
+  margin: 0 auto; 
 }
 
 .carousel-inner img {
-  width: 100%; /* Faz com que as imagens ocupem toda a largura do contêiner */
-  height: auto; /* Mantém a proporção das imagens */
+  width: 100%; 
+  height: auto; 
 }
 
 .carrossel {
@@ -178,7 +178,7 @@ footer {
   }
 }
 
-/* No seu arquivo style.css */
+
 
 .colegas {
   padding: 20px;
@@ -187,17 +187,17 @@ footer {
 .colegas-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px; /* Espaço entre os cards */
+  gap: 20px; 
 }
 
 .colegas .card {
-  flex: 0 1 calc(20% - 20px); /* Ajuste a largura dos cards conforme necessário */
-  max-width: calc(20% - 20px); /* Ajuste a largura máxima dos cards conforme necessário */
+  flex: 0 1 calc(20% - 20px); 
+  max-width: calc(20% - 20px); 
 }
 
 @media screen and (max-width: 768px) {
   .colegas .card {
-    flex: 0 1 calc(50% - 20px); /* Mudança para duas colunas em telas menores */
-    max-width: calc(50% - 20px); /* Largura máxima ajustada para duas colunas */
+    flex: 0 1 calc(50% - 20px);
+    max-width: calc(50% - 20px); 
   }
 }

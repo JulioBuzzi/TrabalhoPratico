@@ -41,8 +41,7 @@ function fetchColegasData() {
         .then(response => response.json())
         .then(data => {
             const colegasContainer = document.querySelector('.colegas-container');
-            colegasContainer.innerHTML = ''; // Limpa o conteúdo atual
-
+            colegasContainer.innerHTML = ''; 
             data.colegas.forEach(colega => {
                 const cardHTML = `
                     <div class="card">
@@ -62,7 +61,7 @@ function fetchColegasData() {
 
 
 function fetchCarouselData() {
-    fetch('db/db.json') // Caminho ajustado para db/db.json
+    fetch('db/db.json') 
         .then(response => response.json())
         .then(data => {
             const carouselIndicators = document.getElementById('carousel-indicators');
