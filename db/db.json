@@ -27,14 +27,14 @@
         "id": 1,
         "foto": "assets/images/bruno.png",
         "alt": "Foto do Bruno",
-        "nome": "Bruno",
+        "nome": "Bruno Maximo",
         "github": "https://github.com/BrunoMaximo03"
       },
       {
         "id": 2,
         "foto": "assets/images/filipi.png",
-        "alt": "Foto do Filipi",
-        "nome": "Filipi",
+        "alt": "Foto do Filipi Pereira",
+        "nome": "Filipi Pereira",
         "github": "https://github.com/filipiipereira"
       },
       {
