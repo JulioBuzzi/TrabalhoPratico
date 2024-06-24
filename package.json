@@ -1,12 +1,14 @@
 {
   "name": "meu-projeto",
   "version": "1.0.0",
-  "description": "Meu projeto utilizando JSON Server",
-  "main": "index.js",
+  "description": "Trabalho pratico de DIW primeiro semestre",
+  "main": "index.html",
   "scripts": {
-    "start": "json-server --watch db/db.json --port 3000"
+    "start": "json-server --watch db/db.json --port 3000",
+    "dev": "live-server"
   },
   "dependencies": {
-    "json-server": "^0.16.3"
+    "json-server": "^0.16.3",
+    "live-server": "^1.2.1"
   }
 }
