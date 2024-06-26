@@ -57,8 +57,8 @@ function fetchGitHubRepos() {
             const reposContainer = document.getElementById('repos-container');
             reposContainer.innerHTML = ''; // Limpa o conteúdo existente
 
-            repos.forEach((repo, index) => {
-                const repoLink = `repo${index + 1}.html`;
+            repos.forEach(repo => {
+                const repoLink = `repo.html?id=${repo.id}`;
                 const repoCard = `
                     <div class="card">
                         <a href="${repoLink}" class="repo-link">
@@ -74,9 +74,6 @@ function fetchGitHubRepos() {
                     </div>
                 `;
                 reposContainer.innerHTML += repoCard;
-
-                // Salva informações na sessionStorage para as páginas individuais
-                sessionStorage.setItem(`repo${index + 1}`, JSON.stringify(repo));
             });
         })
         .catch(error => console.error('Erro ao buscar repositórios do GitHub:', error));
