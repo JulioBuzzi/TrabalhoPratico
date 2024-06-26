@@ -2,10 +2,9 @@
   "name": "meu-projeto",
   "version": "1.0.0",
   "description": "Trabalho pratico de DIW primeiro semestre",
-  "main": "index.html",
+  "main": "index.js",
   "scripts": {
-    "start": "json-server --watch db/db.json --port 3000",
-    "dev": "live-server"
+    "start": "node index.js"
   },
   "dependencies": {
     "json-server": "^0.16.3",
